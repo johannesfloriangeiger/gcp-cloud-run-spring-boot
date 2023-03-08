@@ -16,6 +16,7 @@ Project `$PROJECT_ID` exists in region `$REGION` and has the Container Registry 
 ## Terraform
 
 ```
+terraform -chdir=terraform init
 terraform -chdir=terraform plan -var project=$PROJECT_ID -var region=$REGION -out plan.out
 terraform -chdir=terraform apply plan.out
 ```
